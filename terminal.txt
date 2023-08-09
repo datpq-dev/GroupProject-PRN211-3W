@@ -1,0 +1,7 @@
+dotnet add package Microsoft.Extensions.Configuration --version 6.0.1
+dotnet add package Microsoft.Extensions.Configuration.Json --version 6.0.0
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.20
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.20
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.20
+
+dotnet ef dbcontext scaffold "Server=(local);uid=sa;pwd=12345;database=LibrarySystemManagement;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models
