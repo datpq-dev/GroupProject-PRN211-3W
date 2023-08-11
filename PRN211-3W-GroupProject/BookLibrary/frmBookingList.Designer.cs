@@ -39,11 +39,11 @@
             txtBookID = new TextBox();
             txtAuth = new TextBox();
             txtMemName = new TextBox();
-            txtBookName = new TextBox();
+            txtTitle = new TextBox();
             txtDescription = new TextBox();
             dtBookingDay = new DateTimePicker();
             dtExpiredDay = new DateTimePicker();
-            cboTitle = new ComboBox();
+            cboCategory = new ComboBox();
             txtSearch = new TextBox();
             btnBookingSearch = new Button();
             dgvBookingList = new DataGridView();
@@ -66,9 +66,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(21, 114);
             label2.Name = "label2";
-            label2.Size = new Size(87, 20);
+            label2.Size = new Size(38, 20);
             label2.TabIndex = 1;
-            label2.Text = "Book Name";
+            label2.Text = "Title";
             // 
             // label3
             // 
@@ -102,9 +102,9 @@
             label6.AutoSize = true;
             label6.Location = new Point(348, 184);
             label6.Name = "label6";
-            label6.Size = new Size(38, 20);
+            label6.Size = new Size(69, 20);
             label6.TabIndex = 5;
-            label6.Text = "Title";
+            label6.Text = "Category";
             // 
             // label7
             // 
@@ -145,12 +145,12 @@
             txtMemName.Size = new Size(158, 27);
             txtMemName.TabIndex = 11;
             // 
-            // txtBookName
+            // txtTitle
             // 
-            txtBookName.Location = new Point(142, 107);
-            txtBookName.Name = "txtBookName";
-            txtBookName.Size = new Size(158, 27);
-            txtBookName.TabIndex = 12;
+            txtTitle.Location = new Point(142, 107);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(158, 27);
+            txtTitle.TabIndex = 12;
             // 
             // txtDescription
             // 
@@ -173,13 +173,13 @@
             dtExpiredDay.Size = new Size(250, 27);
             dtExpiredDay.TabIndex = 15;
             // 
-            // cboTitle
+            // cboCategory
             // 
-            cboTitle.FormattingEnabled = true;
-            cboTitle.Location = new Point(439, 177);
-            cboTitle.Name = "cboTitle";
-            cboTitle.Size = new Size(158, 28);
-            cboTitle.TabIndex = 16;
+            cboCategory.FormattingEnabled = true;
+            cboCategory.Location = new Point(439, 177);
+            cboCategory.Name = "cboCategory";
+            cboCategory.Size = new Size(158, 28);
+            cboCategory.TabIndex = 16;
             // 
             // txtSearch
             // 
@@ -238,11 +238,11 @@
             Controls.Add(dgvBookingList);
             Controls.Add(btnBookingSearch);
             Controls.Add(txtSearch);
-            Controls.Add(cboTitle);
+            Controls.Add(cboCategory);
             Controls.Add(dtExpiredDay);
             Controls.Add(dtBookingDay);
             Controls.Add(txtDescription);
-            Controls.Add(txtBookName);
+            Controls.Add(txtTitle);
             Controls.Add(txtMemName);
             Controls.Add(txtAuth);
             Controls.Add(txtBookID);
@@ -275,11 +275,11 @@
         private TextBox txtBookID;
         private TextBox txtAuth;
         private TextBox txtMemName;
-        private TextBox txtBookName;
+        private TextBox txtTitle;
         private TextBox txtDescription;
         private DateTimePicker dtBookingDay;
         private DateTimePicker dtExpiredDay;
-        private ComboBox cboTitle;
+        private ComboBox cboCategory;
         private TextBox txtSearch;
         private Button btnBookingSearch;
         private DataGridView dgvBookingList;

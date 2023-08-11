@@ -11,7 +11,7 @@ namespace BookLibrary_Repository.Models
         }
 
         public long RoleId { get; set; }
-        public string? RoleName { get; set; }
+        public string RoleName { get; set; } = null!;
 
         public virtual ICollection<TblUser> TblUsers { get; set; }
     }

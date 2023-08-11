@@ -30,20 +30,20 @@
         {
             lbUsername = new Label();
             lbPassword = new Label();
-            label3 = new Label();
             label7 = new Label();
-            label8 = new Label();
             label9 = new Label();
             label4 = new Label();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
-            txtFullname = new TextBox();
             txtPhone = new TextBox();
-            txtAddress = new TextBox();
             cboGender = new ComboBox();
             dtDoB = new DateTimePicker();
             btnCreate = new Button();
             btnExit = new Button();
+            label6 = new Label();
+            txtLastName = new TextBox();
+            txtFirstName = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lbUsername
@@ -64,37 +64,19 @@
             lbPassword.TabIndex = 1;
             lbPassword.Text = "Password";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(70, 142);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Full name";
-            // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(70, 300);
+            label7.Location = new Point(70, 306);
             label7.Name = "label7";
             label7.Size = new Size(94, 20);
             label7.TabIndex = 8;
             label7.Text = "Date of Birth";
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(70, 245);
-            label8.Name = "label8";
-            label8.Size = new Size(62, 20);
-            label8.TabIndex = 7;
-            label8.Text = "Address";
-            // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(70, 191);
+            label9.Location = new Point(70, 250);
             label9.Name = "label9";
             label9.Size = new Size(50, 20);
             label9.TabIndex = 6;
@@ -103,7 +85,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(70, 352);
+            label4.Location = new Point(70, 365);
             label4.Name = "label4";
             label4.Size = new Size(57, 20);
             label4.TabIndex = 9;
@@ -123,38 +105,24 @@
             txtPassword.Size = new Size(230, 27);
             txtPassword.TabIndex = 13;
             // 
-            // txtFullname
-            // 
-            txtFullname.Location = new Point(205, 135);
-            txtFullname.Name = "txtFullname";
-            txtFullname.Size = new Size(230, 27);
-            txtFullname.TabIndex = 14;
-            // 
             // txtPhone
             // 
-            txtPhone.Location = new Point(205, 184);
+            txtPhone.Location = new Point(205, 243);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(230, 27);
             txtPhone.TabIndex = 15;
             // 
-            // txtAddress
-            // 
-            txtAddress.Location = new Point(205, 238);
-            txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(230, 27);
-            txtAddress.TabIndex = 16;
-            // 
             // cboGender
             // 
             cboGender.FormattingEnabled = true;
-            cboGender.Location = new Point(205, 344);
+            cboGender.Location = new Point(205, 357);
             cboGender.Name = "cboGender";
             cboGender.Size = new Size(230, 28);
             cboGender.TabIndex = 17;
             // 
             // dtDoB
             // 
-            dtDoB.Location = new Point(205, 295);
+            dtDoB.Location = new Point(205, 301);
             dtDoB.Name = "dtDoB";
             dtDoB.Size = new Size(230, 27);
             dtDoB.TabIndex = 18;
@@ -179,25 +147,57 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(71, 197);
+            label6.Name = "label6";
+            label6.Size = new Size(76, 20);
+            label6.TabIndex = 50;
+            label6.Text = "Last name";
+            // 
+            // txtLastName
+            // 
+            txtLastName.Location = new Point(205, 190);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(230, 27);
+            txtLastName.TabIndex = 49;
+            // 
+            // txtFirstName
+            // 
+            txtFirstName.Location = new Point(205, 134);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(230, 27);
+            txtFirstName.TabIndex = 48;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(70, 141);
+            label1.Name = "label1";
+            label1.Size = new Size(77, 20);
+            label1.TabIndex = 47;
+            label1.Text = "First name";
+            // 
             // frmRegister
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 583);
+            Controls.Add(label6);
+            Controls.Add(txtLastName);
+            Controls.Add(txtFirstName);
+            Controls.Add(label1);
             Controls.Add(btnExit);
             Controls.Add(btnCreate);
             Controls.Add(dtDoB);
             Controls.Add(cboGender);
-            Controls.Add(txtAddress);
             Controls.Add(txtPhone);
-            Controls.Add(txtFullname);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
             Controls.Add(label4);
             Controls.Add(label7);
-            Controls.Add(label8);
             Controls.Add(label9);
-            Controls.Add(label3);
             Controls.Add(lbPassword);
             Controls.Add(lbUsername);
             Name = "frmRegister";
@@ -212,19 +212,19 @@
 
         private Label lbUsername;
         private Label lbPassword;
-        private Label label3;
         private Label label7;
-        private Label label8;
         private Label label9;
         private Label label4;
         private TextBox txtUsername;
         private TextBox txtPassword;
-        private TextBox txtFullname;
         private TextBox txtPhone;
-        private TextBox txtAddress;
         private ComboBox cboGender;
         private DateTimePicker dtDoB;
         private Button btnCreate;
         private Button btnExit;
+        private Label label6;
+        private TextBox txtLastName;
+        private TextBox txtFirstName;
+        private Label label1;
     }
 }

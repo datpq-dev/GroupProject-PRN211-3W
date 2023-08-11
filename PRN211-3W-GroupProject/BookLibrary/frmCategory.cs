@@ -17,7 +17,7 @@ namespace BookLibrary
             InitializeComponent();
         }
 
-        private void btnBookList_Click(object sender, EventArgs e)
+        private void btnViewDetails_Click(object sender, EventArgs e)
         {
 
         }

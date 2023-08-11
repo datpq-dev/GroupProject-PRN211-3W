@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtBookName = new TextBox();
+            txtTitle = new TextBox();
             txtAuth = new TextBox();
             txtBookID = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            cboTitle = new ComboBox();
+            cboCategory = new ComboBox();
             txtDescription = new TextBox();
             label5 = new Label();
             label4 = new Label();
@@ -42,12 +42,12 @@
             btnBDCancel = new Button();
             SuspendLayout();
             // 
-            // txtBookName
+            // txtTitle
             // 
-            txtBookName.Location = new Point(236, 127);
-            txtBookName.Name = "txtBookName";
-            txtBookName.Size = new Size(243, 27);
-            txtBookName.TabIndex = 15;
+            txtTitle.Location = new Point(236, 127);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(243, 27);
+            txtTitle.TabIndex = 15;
             // 
             // txtAuth
             // 
@@ -77,9 +77,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(139, 134);
             label2.Name = "label2";
-            label2.Size = new Size(83, 20);
+            label2.Size = new Size(38, 20);
             label2.TabIndex = 11;
-            label2.Text = "BookName";
+            label2.Text = "Title";
             // 
             // label1
             // 
@@ -90,13 +90,13 @@
             label1.TabIndex = 10;
             label1.Text = "BookID";
             // 
-            // cboTitle
+            // cboCategory
             // 
-            cboTitle.FormattingEnabled = true;
-            cboTitle.Location = new Point(236, 334);
-            cboTitle.Name = "cboTitle";
-            cboTitle.Size = new Size(243, 28);
-            cboTitle.TabIndex = 21;
+            cboCategory.FormattingEnabled = true;
+            cboCategory.Location = new Point(236, 334);
+            cboCategory.Name = "cboCategory";
+            cboCategory.Size = new Size(243, 28);
+            cboCategory.TabIndex = 21;
             // 
             // txtDescription
             // 
@@ -110,9 +110,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(139, 342);
             label5.Name = "label5";
-            label5.Size = new Size(38, 20);
+            label5.Size = new Size(69, 20);
             label5.TabIndex = 17;
-            label5.Text = "Title";
+            label5.Text = "Category";
             // 
             // label4
             // 
@@ -150,11 +150,11 @@
             ClientSize = new Size(625, 591);
             Controls.Add(btnBDCancel);
             Controls.Add(btnSave);
-            Controls.Add(cboTitle);
+            Controls.Add(cboCategory);
             Controls.Add(txtDescription);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(txtBookName);
+            Controls.Add(txtTitle);
             Controls.Add(txtAuth);
             Controls.Add(txtBookID);
             Controls.Add(label3);
@@ -170,13 +170,13 @@
 
         #endregion
 
-        private TextBox txtBookName;
+        private TextBox txtTitle;
         private TextBox txtAuth;
         private TextBox txtBookID;
         private Label label3;
         private Label label2;
         private Label label1;
-        private ComboBox cboTitle;
+        private ComboBox cboCategory;
         private TextBox txtDescription;
         private Label label5;
         private Label label4;

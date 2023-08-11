@@ -34,7 +34,6 @@
             label5 = new Label();
             label2 = new Label();
             label1 = new Label();
-            txtGender = new TextBox();
             txtLastName = new TextBox();
             txtFirstName = new TextBox();
             label4 = new Label();
@@ -46,6 +45,7 @@
             btnAccSave = new Button();
             btnAccCancel = new Button();
             label6 = new Label();
+            cboGender = new ComboBox();
             SuspendLayout();
             // 
             // txtPassword
@@ -95,13 +95,6 @@
             label1.Size = new Size(75, 20);
             label1.TabIndex = 24;
             label1.Text = "Username";
-            // 
-            // txtGender
-            // 
-            txtGender.Location = new Point(198, 419);
-            txtGender.Name = "txtGender";
-            txtGender.Size = new Size(241, 27);
-            txtGender.TabIndex = 35;
             // 
             // txtLastName
             // 
@@ -197,11 +190,20 @@
             label6.TabIndex = 42;
             label6.Text = "Last name";
             // 
+            // cboGender
+            // 
+            cboGender.FormattingEnabled = true;
+            cboGender.Location = new Point(198, 418);
+            cboGender.Name = "cboGender";
+            cboGender.Size = new Size(142, 28);
+            cboGender.TabIndex = 43;
+            // 
             // frmAccountDetails
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(532, 596);
+            Controls.Add(cboGender);
             Controls.Add(label6);
             Controls.Add(btnAccCancel);
             Controls.Add(btnAccSave);
@@ -209,7 +211,6 @@
             Controls.Add(lbRole);
             Controls.Add(dtDoB);
             Controls.Add(label7);
-            Controls.Add(txtGender);
             Controls.Add(txtLastName);
             Controls.Add(txtFirstName);
             Controls.Add(label4);
@@ -235,7 +236,6 @@
         private Label label5;
         private Label label2;
         private Label label1;
-        private TextBox txtGender;
         private TextBox txtLastName;
         private TextBox txtFirstName;
         private Label label4;
@@ -247,5 +247,6 @@
         private Button btnAccSave;
         private Button btnAccCancel;
         private Label label6;
+        private ComboBox cboGender;
     }
 }

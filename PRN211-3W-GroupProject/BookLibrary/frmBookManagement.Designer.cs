@@ -35,10 +35,10 @@
             label5 = new Label();
             label7 = new Label();
             txtBookID = new TextBox();
-            txtBookName = new TextBox();
+            txtTitle = new TextBox();
             txtDescription = new TextBox();
             txtStatus = new TextBox();
-            cboTitle = new ComboBox();
+            cboCategory = new ComboBox();
             dgvBookList = new DataGridView();
             btnAddBook = new Button();
             btnUpdateBook = new Button();
@@ -65,9 +65,9 @@
             label2.AutoSize = true;
             label2.Location = new Point(61, 121);
             label2.Name = "label2";
-            label2.Size = new Size(83, 20);
+            label2.Size = new Size(38, 20);
             label2.TabIndex = 1;
-            label2.Text = "BookName";
+            label2.Text = "Title";
             // 
             // label3
             // 
@@ -92,9 +92,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(435, 121);
             label5.Name = "label5";
-            label5.Size = new Size(38, 20);
+            label5.Size = new Size(69, 20);
             label5.TabIndex = 4;
-            label5.Text = "Title";
+            label5.Text = "Category";
             // 
             // label7
             // 
@@ -112,12 +112,12 @@
             txtBookID.Size = new Size(243, 27);
             txtBookID.TabIndex = 7;
             // 
-            // txtBookName
+            // txtTitle
             // 
-            txtBookName.Location = new Point(158, 114);
-            txtBookName.Name = "txtBookName";
-            txtBookName.Size = new Size(243, 27);
-            txtBookName.TabIndex = 9;
+            txtTitle.Location = new Point(158, 114);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(243, 27);
+            txtTitle.TabIndex = 9;
             // 
             // txtDescription
             // 
@@ -133,13 +133,13 @@
             txtStatus.Size = new Size(243, 27);
             txtStatus.TabIndex = 12;
             // 
-            // cboTitle
+            // cboCategory
             // 
-            cboTitle.FormattingEnabled = true;
-            cboTitle.Location = new Point(526, 113);
-            cboTitle.Name = "cboTitle";
-            cboTitle.Size = new Size(243, 28);
-            cboTitle.TabIndex = 13;
+            cboCategory.FormattingEnabled = true;
+            cboCategory.Location = new Point(526, 113);
+            cboCategory.Name = "cboCategory";
+            cboCategory.Size = new Size(243, 28);
+            cboCategory.TabIndex = 13;
             // 
             // dgvBookList
             // 
@@ -238,10 +238,10 @@
             Controls.Add(btnUpdateBook);
             Controls.Add(btnAddBook);
             Controls.Add(dgvBookList);
-            Controls.Add(cboTitle);
+            Controls.Add(cboCategory);
             Controls.Add(txtStatus);
             Controls.Add(txtDescription);
-            Controls.Add(txtBookName);
+            Controls.Add(txtTitle);
             Controls.Add(txtAuth);
             Controls.Add(txtBookID);
             Controls.Add(label7);
@@ -267,10 +267,10 @@
         private Label label5;
         private Label label7;
         private TextBox txtBookID;
-        private TextBox txtBookName;
+        private TextBox txtTitle;
         private TextBox txtDescription;
         private TextBox txtStatus;
-        private ComboBox cboTitle;
+        private ComboBox cboCategory;
         private DataGridView dgvBookList;
         private Button btnAddBook;
         private Button btnUpdateBook;

@@ -7,21 +7,21 @@ namespace BookLibrary_Repository.Models
     {
         public TblUser()
         {
-            TblBookings = new HashSet<TblBooking>();
+            TblBorrows = new HashSet<TblBorrow>();
         }
 
         public long UserId { get; set; }
         public long RoleId { get; set; }
-        public string? Username { get; set; }
-        public string? Password { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? Phone { get; set; }
+        public string Username { get; set; } = null!;
+        public string Password { get; set; } = null!;
+        public string FirstName { get; set; } = null!;
+        public string LastName { get; set; } = null!;
+        public string Phone { get; set; } = null!;
         public DateTime? DoB { get; set; }
-        public string? Gender { get; set; }
-        public bool? Status { get; set; }
+        public string Gender { get; set; } = null!;
+        public bool Status { get; set; }
 
         public virtual TblRole Role { get; set; } = null!;
-        public virtual ICollection<TblBooking> TblBookings { get; set; }
+        public virtual ICollection<TblBorrow> TblBorrows { get; set; }
     }
 }
