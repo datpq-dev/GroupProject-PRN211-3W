@@ -12,9 +12,9 @@ namespace BookLibrary_Repository.Repository
     {
         private readonly LibrarySystemManagementContext _dbContext;
         private readonly DbSet<T> _dbSet;
-        public GenericRepository(string connectionString)
+        public GenericRepository()
         {
-            _dbContext = new LibrarySystemManagementContext(connectionString);
+            _dbContext = new LibrarySystemManagementContext();
             _dbSet = _dbContext.Set<T>();
         }
         public List<T> GetAll()

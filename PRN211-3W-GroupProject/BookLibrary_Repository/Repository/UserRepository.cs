@@ -9,8 +9,6 @@ namespace BookLibrary_Repository.Repository
 {
     public class UserRepository : GenericRepository<TblUser>
     {
-        public UserRepository(string connectionString) : base(connectionString)
-        {
-        }
+        
     }
 }

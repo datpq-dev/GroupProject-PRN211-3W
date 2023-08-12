@@ -17,6 +17,7 @@ namespace BookLibrary
         public frmLogin()
         {
             InitializeComponent();
+            _userRepository = new UserRepository();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -40,8 +41,30 @@ namespace BookLibrary
             //check mat khau va user 1
             var member = _userRepository.GetAll()
                 .FirstOrDefault(m => m.Username == txtUsername.Text && m.Password == txtPassword.Text);
-
-            if (member == null)
+            // Kiểm tra theo RoleId sử dụng switch case
+            switch (member.RoleId)
+            {
+                case 1: // Admin
+                    frmAccountManagement frmAccountManagement = new();
+                    frmAccountManagement.ShowDialog();
+                    frmAccountManagement.Hide();
+                    // Thực hiện các hành động cho Admin
+                    break;
+                case 2: // Librarian
+                    frmBookManagement frmBookManagement = new();
+                    frmBookManagement.ShowDialog();
+                    frmBookManagement.Hide();
+                    // Thực hiện các hành động cho Librarian
+                    break;
+                case 3: // Member
+                    
+                    // Thực hiện các hành động cho Member
+                    break;
+                default:
+                    MessageBox.Show("Unknown Role");
+                    break;
+            }
+            /*if (member == null)
             {
                 MessageBox.Show("Username or Pass invalid...");
             }
@@ -58,7 +81,7 @@ namespace BookLibrary
                     MessageBox.Show("You are not allow to login");
                 }
 
-            }
+            }*/
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
