@@ -17,9 +17,21 @@ namespace BookLibrary
             InitializeComponent();
         }
 
-        private void btnViewDetails_Click(object sender, EventArgs e)
+        private void btnAddBook_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnViewCart_Click(object sender, EventArgs e)
+        {
+            frmBookCart frmBookCart = new frmBookCart();
+            frmBookCart.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnBookingList_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -24,9 +24,8 @@ namespace BookLibrary
 
         private void btnBDCancel_Click(object sender, EventArgs e)
         {
-            frmBookManagement frmBookManagement = new frmBookManagement();
-            frmBookManagement.ShowDialog();
-            this.Hide();
+            this.Close();
+            
         }
 
         private void btnBDSave_Click(object sender, EventArgs e)

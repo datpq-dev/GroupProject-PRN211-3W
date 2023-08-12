@@ -19,15 +19,16 @@ namespace BookLibrary
         private void BtnRegister_Click(object sender, EventArgs e)
         {
             frmRegister frmRegister = new();
-            frmRegister.ShowDialog();
             this.Hide();
+            frmRegister.Show();
+            
         }
 
         private void BtnLog_Click(object sender, EventArgs e)
         {
             frmLogin frmLogin = new();
-            frmLogin.ShowDialog();
             this.Hide();
+            frmLogin.Show();
         }
     }
 }

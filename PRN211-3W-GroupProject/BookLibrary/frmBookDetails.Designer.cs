@@ -40,6 +40,8 @@
             label4 = new Label();
             btnSave = new Button();
             btnBDCancel = new Button();
+            txtPrice = new TextBox();
+            label6 = new Label();
             SuspendLayout();
             // 
             // txtTitle
@@ -93,7 +95,7 @@
             // cboCategory
             // 
             cboCategory.FormattingEnabled = true;
-            cboCategory.Location = new Point(236, 334);
+            cboCategory.Location = new Point(236, 405);
             cboCategory.Name = "cboCategory";
             cboCategory.Size = new Size(243, 28);
             cboCategory.TabIndex = 21;
@@ -108,7 +110,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(139, 342);
+            label5.Location = new Point(139, 413);
             label5.Name = "label5";
             label5.Size = new Size(69, 20);
             label5.TabIndex = 17;
@@ -125,7 +127,7 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(120, 449);
+            btnSave.Location = new Point(112, 492);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(104, 51);
             btnSave.TabIndex = 22;
@@ -135,7 +137,7 @@
             // 
             // btnBDCancel
             // 
-            btnBDCancel.Location = new Point(409, 449);
+            btnBDCancel.Location = new Point(401, 492);
             btnBDCancel.Name = "btnBDCancel";
             btnBDCancel.Size = new Size(104, 51);
             btnBDCancel.TabIndex = 23;
@@ -143,11 +145,29 @@
             btnBDCancel.UseVisualStyleBackColor = true;
             btnBDCancel.Click += btnBDCancel_Click;
             // 
+            // txtPrice
+            // 
+            txtPrice.Location = new Point(236, 334);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(243, 27);
+            txtPrice.TabIndex = 25;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(139, 341);
+            label6.Name = "label6";
+            label6.Size = new Size(41, 20);
+            label6.TabIndex = 24;
+            label6.Text = "Price";
+            // 
             // frmBookDetails
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(625, 591);
+            Controls.Add(txtPrice);
+            Controls.Add(label6);
             Controls.Add(btnBDCancel);
             Controls.Add(btnSave);
             Controls.Add(cboCategory);
@@ -182,5 +202,7 @@
         private Label label4;
         private Button btnSave;
         private Button btnBDCancel;
+        private TextBox txtPrice;
+        private Label label6;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace BookLibrary
 {
-    partial class frmCategoryDetails
+    partial class frmBookCart
     {
         /// <summary>
         /// Required designer variable.
@@ -53,16 +53,16 @@
             btnBooking.UseVisualStyleBackColor = true;
             btnBooking.ClientSizeChanged += btnBooking_Click;
             // 
-            // frmCategoryDetails
+            // frmBookCart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnBooking);
             Controls.Add(dgvBookList);
-            Name = "frmCategoryDetails";
+            Name = "frmBookCart";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmCategoryDetails";
+            Text = "frmBookCart";
             ((System.ComponentModel.ISupportInitialize)dgvBookList).EndInit();
             ResumeLayout(false);
         }

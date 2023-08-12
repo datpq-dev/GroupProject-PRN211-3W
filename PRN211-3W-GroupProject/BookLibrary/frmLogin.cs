@@ -46,17 +46,20 @@ namespace BookLibrary
             {
                 case 1: // Admin
                     frmAccountManagement frmAccountManagement = new();
-                    frmAccountManagement.ShowDialog();
-                    frmAccountManagement.Hide();
+                    this.Hide();
+                    frmAccountManagement.Show();
                     // Thực hiện các hành động cho Admin
                     break;
                 case 2: // Librarian
                     frmBookManagement frmBookManagement = new();
-                    frmBookManagement.ShowDialog();
-                    frmBookManagement.Hide();
+                    this.Hide();
+                    frmBookManagement.Show();
                     // Thực hiện các hành động cho Librarian
                     break;
                 case 3: // Member
+                    frmCategory frmCategory = new();
+                    this.Hide();
+                    frmCategory.Show();
                     
                     // Thực hiện các hành động cho Member
                     break;
@@ -64,24 +67,6 @@ namespace BookLibrary
                     MessageBox.Show("Unknown Role");
                     break;
             }
-            /*if (member == null)
-            {
-                MessageBox.Show("Username or Pass invalid...");
-            }
-            else
-            {
-                if (member.RoleId == 2)
-                {
-                    frmBookManagement frmBookManagement = new();
-                    frmBookManagement.ShowDialog();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("You are not allow to login");
-                }
-
-            }*/
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)

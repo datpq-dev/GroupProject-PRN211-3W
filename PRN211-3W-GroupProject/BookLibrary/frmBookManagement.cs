@@ -27,7 +27,6 @@ namespace BookLibrary
         {
             frmBookDetails frmBookDetails = new();
             frmBookDetails.ShowDialog();
-            this.Hide();
         }
 
         private void btnDeleteBook_Click(object sender, EventArgs e)
@@ -44,8 +43,8 @@ namespace BookLibrary
         private void btnBookingList_Click(object sender, EventArgs e)
         {
             frmBookingList frmBookingList = new();
+            this.Close();
             frmBookingList.ShowDialog();
-            this.Hide();
         }
 
         private void btnSearchBook_Click(object sender, EventArgs e)

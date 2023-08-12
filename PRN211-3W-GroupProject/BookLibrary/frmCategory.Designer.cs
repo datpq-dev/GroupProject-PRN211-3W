@@ -31,7 +31,10 @@
             btnSearchBook = new Button();
             txtSearch = new TextBox();
             dgvBookList = new DataGridView();
-            btnBookList = new Button();
+            btnAddBook = new Button();
+            btnViewCart = new Button();
+            sqlCommandBuilder1 = new Microsoft.Data.SqlClient.SqlCommandBuilder();
+            btnBookingList = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvBookList).BeginInit();
             SuspendLayout();
             // 
@@ -61,28 +64,56 @@
             dgvBookList.Size = new Size(865, 351);
             dgvBookList.TabIndex = 28;
             // 
-            // btnBookList
+            // btnAddBook
             // 
-            btnBookList.Location = new Point(427, 457);
-            btnBookList.Name = "btnBookList";
-            btnBookList.Size = new Size(105, 47);
-            btnBookList.TabIndex = 29;
-            btnBookList.Text = "ViewDetails";
-            btnBookList.UseVisualStyleBackColor = true;
-            btnBookList.Click += btnViewDetails_Click;
+            btnAddBook.Location = new Point(90, 458);
+            btnAddBook.Name = "btnAddBook";
+            btnAddBook.Size = new Size(105, 47);
+            btnAddBook.TabIndex = 29;
+            btnAddBook.Text = "Add";
+            btnAddBook.UseVisualStyleBackColor = true;
+            btnAddBook.Click += btnAddBook_Click;
+            // 
+            // btnViewCart
+            // 
+            btnViewCart.Location = new Point(323, 458);
+            btnViewCart.Name = "btnViewCart";
+            btnViewCart.Size = new Size(105, 47);
+            btnViewCart.TabIndex = 30;
+            btnViewCart.Text = "ViewCart";
+            btnViewCart.UseVisualStyleBackColor = true;
+            btnViewCart.Click += btnViewCart_Click;
+            // 
+            // sqlCommandBuilder1
+            // 
+            sqlCommandBuilder1.DataAdapter = null;
+            sqlCommandBuilder1.QuotePrefix = "[";
+            sqlCommandBuilder1.QuoteSuffix = "]";
+            // 
+            // btnBookingList
+            // 
+            btnBookingList.Location = new Point(553, 458);
+            btnBookingList.Name = "btnBookingList";
+            btnBookingList.Size = new Size(105, 47);
+            btnBookingList.TabIndex = 31;
+            btnBookingList.Text = "BookingList";
+            btnBookingList.UseVisualStyleBackColor = true;
+            btnBookingList.Click += btnBookingList_Click;
             // 
             // frmCategory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(953, 531);
-            Controls.Add(btnBookList);
+            Controls.Add(btnBookingList);
+            Controls.Add(btnViewCart);
+            Controls.Add(btnAddBook);
             Controls.Add(dgvBookList);
             Controls.Add(btnSearchBook);
             Controls.Add(txtSearch);
             Name = "frmCategory";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "frmBookShelf";
+            Text = "frmCategory";
             ((System.ComponentModel.ISupportInitialize)dgvBookList).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -92,6 +123,9 @@
         private Button btnSearchBook;
         private TextBox txtSearch;
         private DataGridView dgvBookList;
-        private Button btnBookList;
+        private Button btnAddBook;
+        private Button btnViewCart;
+        private Microsoft.Data.SqlClient.SqlCommandBuilder sqlCommandBuilder1;
+        private Button btnBookingList;
     }
 }

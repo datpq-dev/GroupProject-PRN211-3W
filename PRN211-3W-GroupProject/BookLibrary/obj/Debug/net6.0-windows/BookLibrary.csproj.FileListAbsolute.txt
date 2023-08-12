@@ -64,4 +64,5 @@ D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\bin\Debug\net6.0-windows\runtime
 D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\bin\Debug\net6.0-windows\BookLibrary_Repository.dll
 D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\bin\Debug\net6.0-windows\BookLibrary_Repository.pdb
-D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\obj\Debug\net6.0-windows\BookLibrary.frmCategoryDetails.resources
+D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\obj\Debug\net6.0-windows\BookLibrary.frmBookCart.resources
+D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary\obj\Debug\net6.0-windows\BookLibrary.frmMemberBookingList.resources

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BookLibrary
 {
-    public partial class frmCategoryDetails : Form
+    public partial class frmMemberBookingList : Form
     {
-        public frmCategoryDetails()
+        public frmMemberBookingList()
         {
             InitializeComponent();
-        }
-
-        private void btnBooking_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
