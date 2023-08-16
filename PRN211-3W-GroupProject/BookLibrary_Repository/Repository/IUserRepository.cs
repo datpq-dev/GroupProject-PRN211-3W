@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace BookLibrary_Repository.Repository
 {
-    public class BookRepository : GenericRepository<TblBook>
+    public interface IUserRepository
     {
+        IEnumerable<TblUser> GetUsers();
+        TblUser GetUser(int id);
     }
 }
