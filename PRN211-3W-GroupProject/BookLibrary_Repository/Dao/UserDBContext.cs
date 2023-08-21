@@ -35,9 +35,9 @@ namespace BookLibrary_Repository.Dao
                 }
             }
         }
-        public TblUser GetUserById(int id)
+        public TblUser GetUserById(string username)
         {
-            return this.TblUsers.FirstOrDefault(u => u.UserId.Equals(id));
+            return this.TblUsers.FirstOrDefault(u => u.Username.Equals(username));
         }
         public IEnumerable<TblUser> GetAllUsers() 
         {
@@ -45,7 +45,7 @@ namespace BookLibrary_Repository.Dao
         }
         public void UpdateUser(TblUser user)
         {
-            var existingUser = this.TblUsers.FirstOrDefault(u => u.UserId == user.UserId);
+            var existingUser = this.TblUsers.FirstOrDefault(u => u.Username == user.Username);
             if (existingUser != null)
             {
                 this.Entry(existingUser).State = EntityState.Modified;
@@ -53,9 +53,9 @@ namespace BookLibrary_Repository.Dao
             this.TblUsers.Update(user);
             this.SaveChanges();
         }
-        public void DeleteUser(int id)
+        public void DeleteUser(string username)
         {
-            var user = this.TblUsers.FirstOrDefault(u => u.UserId==id) ?? this.TblUsers.FirstOrDefault(u => u.UserId==id);
+            var user = this.TblUsers.FirstOrDefault(u => u.Username==username) ?? this.TblUsers.FirstOrDefault(u => u.Username==username);
             if (user != null)
             {
                 this.Entry(user).State = EntityState.Deleted;

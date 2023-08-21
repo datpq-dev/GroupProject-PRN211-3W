@@ -10,7 +10,7 @@ namespace BookLibrary_Repository.Models
             TblUsers = new HashSet<TblUser>();
         }
 
-        public long RoleId { get; set; }
+        public byte RoleId { get; set; }
         public string RoleName { get; set; } = null!;
 
         public virtual ICollection<TblUser> TblUsers { get; set; }

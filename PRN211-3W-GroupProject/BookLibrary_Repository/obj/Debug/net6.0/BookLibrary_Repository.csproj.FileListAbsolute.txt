@@ -12,3 +12,17 @@ D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\refi
 D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.pdb
 D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.genruntimeconfig.cache
 D:\PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\ref\BookLibrary_Repository.dll
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.csproj.AssemblyReference.cache
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.AssemblyInfoInputs.cache
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.AssemblyInfo.cs
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.csproj.CoreCompileInputs.cache
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.dll
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\refint\BookLibrary_Repository.dll
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.pdb
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\bin\Debug\net6.0\BookLibrary_Repository.deps.json
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\bin\Debug\net6.0\BookLibrary_Repository.runtimeconfig.json
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\bin\Debug\net6.0\BookLibrary_Repository.dll
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\bin\Debug\net6.0\BookLibrary_Repository.pdb
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\BookLibrary_Repository.genruntimeconfig.cache
+C:\Users\Toan\Documents\GitHub\GroupProject-PRN211-3W\PRN211-3W-GroupProject\BookLibrary_Repository\obj\Debug\net6.0\ref\BookLibrary_Repository.dll

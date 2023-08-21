@@ -7,15 +7,20 @@ namespace BookLibrary_Repository.Models
     {
         public TblBook()
         {
-            TblBorrowDetails = new HashSet<TblBorrowDetail>();
+            TblBookDetails = new HashSet<TblBookDetail>();
+            Categories = new HashSet<TblCategory>();
         }
 
-        public string BookId { get; set; } = null!;
         public string Isbn { get; set; } = null!;
+        public string Title { get; set; } = null!;
+        public string Author { get; set; } = null!;
         public string? Description { get; set; }
-        public bool Status { get; set; }
+        public int BookingPeriod { get; set; }
+        public double Price { get; set; }
+        public string BookIdprefix { get; set; } = null!;
 
-        public virtual TblBookInfo IsbnNavigation { get; set; } = null!;
-        public virtual ICollection<TblBorrowDetail> TblBorrowDetails { get; set; }
+        public virtual ICollection<TblBookDetail> TblBookDetails { get; set; }
+
+        public virtual ICollection<TblCategory> Categories { get; set; }
     }
 }

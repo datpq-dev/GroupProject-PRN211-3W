@@ -5,13 +5,7 @@ namespace BookLibrary_Repository.Models
 {
     public partial class TblUser
     {
-        public TblUser()
-        {
-            TblBorrows = new HashSet<TblBorrow>();
-        }
-
-        public long UserId { get; set; }
-        public long RoleId { get; set; }
+        public byte RoleId { get; set; }
         public string Username { get; set; } = null!;
         public string Password { get; set; } = null!;
         public string FirstName { get; set; } = null!;
@@ -22,6 +16,7 @@ namespace BookLibrary_Repository.Models
         public bool Status { get; set; }
 
         public virtual TblRole Role { get; set; } = null!;
-        public virtual ICollection<TblBorrow> TblBorrows { get; set; }
+        public virtual TblLibrarian? TblLibrarian { get; set; }
+        public virtual TblMember? TblMember { get; set; }
     }
 }

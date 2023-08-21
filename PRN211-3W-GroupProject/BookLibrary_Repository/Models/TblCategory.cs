@@ -7,12 +7,12 @@ namespace BookLibrary_Repository.Models
     {
         public TblCategory()
         {
-            TblBookInfos = new HashSet<TblBookInfo>();
+            Isbns = new HashSet<TblBook>();
         }
 
-        public long CategoryId { get; set; }
+        public int CategoryId { get; set; }
         public string CategoryName { get; set; } = null!;
 
-        public virtual ICollection<TblBookInfo> TblBookInfos { get; set; }
+        public virtual ICollection<TblBook> Isbns { get; set; }
     }
 }

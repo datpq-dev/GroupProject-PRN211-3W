@@ -26,13 +26,13 @@ namespace BookLibrary_Repository.Dao
                 }
             }
         }
-        public TblBook GetBookById(int id)
+        public TblBookDetail GetBookById(int id)
         {
-            return this.TblBooks.FirstOrDefault(b => b.BookId.Equals(id);
+            return this.TblBookDetails.FirstOrDefault(b => b.BookId.Equals(id));
         }
-        public IEnumerable<TblBook> GetAllBooks() 
+        public IEnumerable<TblBookDetail> GetAllBooks() 
         {
-            return this.TblBooks.ToList();
+            return this.TblBookDetails.ToList();
         }
     }
 }

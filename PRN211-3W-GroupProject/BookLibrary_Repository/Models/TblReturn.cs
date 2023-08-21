@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace BookLibrary_Repository.Models
 {
-    public partial class TblBorrow
+    public partial class TblReturn
     {
-        public TblBorrow()
+        public TblReturn()
         {
             TblBorrowReturnDetails = new HashSet<TblBorrowReturnDetail>();
         }
 
-        public int BorrowId { get; set; }
+        public int ReturnId { get; set; }
         public string MemberId { get; set; } = null!;
-        public DateTime BorrowDay { get; set; }
+        public DateTime ReturnDay { get; set; }
         public string LibrarianId { get; set; } = null!;
 
         public virtual TblLibrarian Librarian { get; set; } = null!;

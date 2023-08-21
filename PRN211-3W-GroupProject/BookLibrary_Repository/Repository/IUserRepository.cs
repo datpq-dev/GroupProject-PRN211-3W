@@ -10,6 +10,6 @@ namespace BookLibrary_Repository.Repository
     public interface IUserRepository
     {
         IEnumerable<TblUser> GetUsers();
-        TblUser GetUser(int id);
+        TblUser GetUser(string username);
     }
 }
