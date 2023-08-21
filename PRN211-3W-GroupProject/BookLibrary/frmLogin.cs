@@ -13,11 +13,11 @@ namespace BookLibrary
 {
     public partial class frmLogin : Form
     {
-        private UserRepository _userRepository;
+        private UserTable _userTable;
         public frmLogin()
         {
             InitializeComponent();
-            _userRepository = new UserRepository();
+            _userTable = new UserTable();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace BookLibrary
             }
 
             //check mat khau va user 1
-            var member = _userRepository.GetAll()
+            var member = _userTable.GetUsers()
                 .FirstOrDefault(m => m.Username == txtUsername.Text && m.Password == txtPassword.Text);
             // Kiểm tra theo RoleId sử dụng switch case
             switch (member.RoleId)

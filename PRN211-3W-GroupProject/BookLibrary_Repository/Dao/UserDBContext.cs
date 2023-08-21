@@ -41,7 +41,7 @@ namespace BookLibrary_Repository.Dao
         }
         public IEnumerable<TblUser> GetAllUsers() 
         {
-            return this.TblUsers.Include(u => u.RoleId).ToList();// show all avai accounnt
+            return this.TblUsers.Include(u => u.Role).ToList();// show all avai accounnt
         }
         public void UpdateUser(TblUser user)
         {
