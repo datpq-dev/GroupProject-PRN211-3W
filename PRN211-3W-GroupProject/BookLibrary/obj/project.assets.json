@@ -2299,23 +2299,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adm\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Toan\\.nuget\\packages\\": {},
+    "D:\\VisualStudio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary\\BookLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary\\BookLibrary.csproj",
       "projectName": "BookLibrary",
-      "projectPath": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary\\BookLibrary.csproj",
-      "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary\\obj\\",
+      "projectPath": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary\\BookLibrary.csproj",
+      "packagesPath": "C:\\Users\\Toan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\VisualStudio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Toan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2331,8 +2331,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj": {
-              "projectPath": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj"
+            "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj": {
+              "projectPath": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj"
             }
           }
         }
@@ -2375,7 +2375,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

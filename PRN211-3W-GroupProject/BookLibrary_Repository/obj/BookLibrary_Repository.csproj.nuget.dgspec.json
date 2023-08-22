@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj": {}
+    "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj": {
+    "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj",
         "projectName": "BookLibrary_Repository",
-        "projectPath": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\source\\repos\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\obj\\",
+        "projectPath": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\BookLibrary_Repository.csproj",
+        "packagesPath": "C:\\Users\\Toan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Toan\\Documents\\GitHub\\GroupProject-PRN211-3W\\PRN211-3W-GroupProject\\BookLibrary_Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\VisualStudio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Toan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
