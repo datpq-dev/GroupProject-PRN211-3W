@@ -42,9 +42,6 @@ namespace BookLibrary
 
         private void btnBookingList_Click(object sender, EventArgs e)
         {
-            frmBookingList frmBookingList = new();
-            this.Close();
-            frmBookingList.ShowDialog();
         }
 
         private void btnSearchBook_Click(object sender, EventArgs e)
