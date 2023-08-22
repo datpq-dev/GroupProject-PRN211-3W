@@ -15,8 +15,13 @@ namespace BookLibrary_Repository.Models
         public string Gender { get; set; } = null!;
         public bool Status { get; set; }
 
+       
+        
+       
+
         public virtual TblRole Role { get; set; } = null!;
         public virtual TblLibrarian? TblLibrarian { get; set; }
         public virtual TblMember? TblMember { get; set; }
+
     }
 }
