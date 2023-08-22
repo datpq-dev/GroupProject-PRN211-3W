@@ -4,9 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace BookLibrary
 {
@@ -32,12 +29,6 @@ namespace BookLibrary
         private void btnDeleteBook_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnExitBook_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-            return;
         }
 
         private void btnBookingList_Click(object sender, EventArgs e)
