@@ -42,31 +42,30 @@
             btnSearchBook = new Button();
             txtAuth = new TextBox();
             splitContainer1 = new SplitContainer();
-            splitContainer2 = new SplitContainer();
-            BookInformation = new GroupBox();
-            textBox1 = new TextBox();
-            richTextBox1 = new RichTextBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             grSearch = new GroupBox();
             grAction = new GroupBox();
-            btnAddBook = new Button();
-            btnUpdateBook = new Button();
-            btnDeleteBook = new Button();
             btnExitBook = new Button();
+            btnDeleteBook = new Button();
+            btnAddBook = new Button();
+            splitContainer2 = new SplitContainer();
             label6 = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            BookInformation = new GroupBox();
+            rtbDescription = new RichTextBox();
+            txtCategories = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvBookList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            grSearch.SuspendLayout();
+            grAction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
             splitContainer2.Panel1.SuspendLayout();
             splitContainer2.Panel2.SuspendLayout();
             splitContainer2.SuspendLayout();
             BookInformation.SuspendLayout();
-            grSearch.SuspendLayout();
-            grAction.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -149,15 +148,20 @@
             // 
             // dgvBookList
             // 
+            dgvBookList.AllowUserToAddRows = false;
+            dgvBookList.AllowUserToDeleteRows = false;
             dgvBookList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBookList.Dock = DockStyle.Fill;
             dgvBookList.Location = new Point(0, 0);
             dgvBookList.Margin = new Padding(3, 2, 3, 2);
+            dgvBookList.MultiSelect = false;
             dgvBookList.Name = "dgvBookList";
             dgvBookList.RowHeadersWidth = 51;
             dgvBookList.RowTemplate.Height = 29;
+            dgvBookList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvBookList.Size = new Size(1083, 410);
             dgvBookList.TabIndex = 15;
+            dgvBookList.CellClick += dgvBookList_CellClick;
             // 
             // txtSearch
             // 
@@ -206,6 +210,73 @@
             splitContainer1.SplitterDistance = 1083;
             splitContainer1.TabIndex = 23;
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(grSearch);
+            flowLayoutPanel1.Controls.Add(grAction);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(182, 410);
+            flowLayoutPanel1.TabIndex = 26;
+            // 
+            // grSearch
+            // 
+            grSearch.Controls.Add(txtSearch);
+            grSearch.Controls.Add(btnSearchBook);
+            grSearch.Location = new Point(3, 3);
+            grSearch.Name = "grSearch";
+            grSearch.Size = new Size(179, 91);
+            grSearch.TabIndex = 24;
+            grSearch.TabStop = false;
+            grSearch.Text = "Search";
+            // 
+            // grAction
+            // 
+            grAction.Controls.Add(btnExitBook);
+            grAction.Controls.Add(btnDeleteBook);
+            grAction.Controls.Add(btnAddBook);
+            grAction.Location = new Point(3, 100);
+            grAction.Name = "grAction";
+            grAction.Size = new Size(179, 307);
+            grAction.TabIndex = 25;
+            grAction.TabStop = false;
+            grAction.Text = "Action";
+            // 
+            // btnExitBook
+            // 
+            btnExitBook.Dock = DockStyle.Top;
+            btnExitBook.Location = new Point(3, 113);
+            btnExitBook.Margin = new Padding(3, 2, 3, 2);
+            btnExitBook.Name = "btnExitBook";
+            btnExitBook.Size = new Size(173, 47);
+            btnExitBook.TabIndex = 23;
+            btnExitBook.Text = "Exit";
+            btnExitBook.UseVisualStyleBackColor = true;
+            btnExitBook.Click += btnExitBook_Click;
+            // 
+            // btnDeleteBook
+            // 
+            btnDeleteBook.Dock = DockStyle.Top;
+            btnDeleteBook.Location = new Point(3, 66);
+            btnDeleteBook.Margin = new Padding(3, 2, 3, 2);
+            btnDeleteBook.Name = "btnDeleteBook";
+            btnDeleteBook.Size = new Size(173, 47);
+            btnDeleteBook.TabIndex = 22;
+            btnDeleteBook.Text = "Delete";
+            btnDeleteBook.UseVisualStyleBackColor = true;
+            // 
+            // btnAddBook
+            // 
+            btnAddBook.Dock = DockStyle.Top;
+            btnAddBook.Location = new Point(3, 19);
+            btnAddBook.Margin = new Padding(3, 2, 3, 2);
+            btnAddBook.Name = "btnAddBook";
+            btnAddBook.Size = new Size(173, 47);
+            btnAddBook.TabIndex = 20;
+            btnAddBook.Text = "Add";
+            btnAddBook.UseVisualStyleBackColor = true;
+            // 
             // splitContainer2
             // 
             splitContainer2.Dock = DockStyle.Fill;
@@ -226,10 +297,21 @@
             splitContainer2.SplitterDistance = 165;
             splitContainer2.TabIndex = 24;
             // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Top;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 32.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(451, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(409, 59);
+            label6.TabIndex = 24;
+            label6.Text = "Book Management";
+            // 
             // BookInformation
             // 
-            BookInformation.Controls.Add(richTextBox1);
-            BookInformation.Controls.Add(textBox1);
+            BookInformation.Controls.Add(rtbDescription);
+            BookInformation.Controls.Add(txtCategories);
             BookInformation.Controls.Add(label1);
             BookInformation.Controls.Add(label4);
             BookInformation.Controls.Add(label2);
@@ -248,109 +330,20 @@
             BookInformation.TabStop = false;
             BookInformation.Text = "Book Information";
             // 
-            // textBox1
+            // rtbDescription
             // 
-            textBox1.Location = new Point(67, 47);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(364, 23);
-            textBox1.TabIndex = 10;
+            rtbDescription.Location = new Point(779, 16);
+            rtbDescription.Name = "rtbDescription";
+            rtbDescription.Size = new Size(478, 54);
+            rtbDescription.TabIndex = 13;
+            rtbDescription.Text = "";
             // 
-            // richTextBox1
+            // txtCategories
             // 
-            richTextBox1.Location = new Point(779, 16);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(328, 54);
-            richTextBox1.TabIndex = 13;
-            richTextBox1.Text = "";
-            // 
-            // grSearch
-            // 
-            grSearch.Controls.Add(txtSearch);
-            grSearch.Controls.Add(btnSearchBook);
-            grSearch.Location = new Point(3, 3);
-            grSearch.Name = "grSearch";
-            grSearch.Size = new Size(179, 91);
-            grSearch.TabIndex = 24;
-            grSearch.TabStop = false;
-            grSearch.Text = "Search";
-            // 
-            // grAction
-            // 
-            grAction.Controls.Add(btnAddBook);
-            grAction.Controls.Add(btnUpdateBook);
-            grAction.Controls.Add(btnDeleteBook);
-            grAction.Controls.Add(btnExitBook);
-            grAction.Location = new Point(3, 100);
-            grAction.Name = "grAction";
-            grAction.Size = new Size(179, 218);
-            grAction.TabIndex = 25;
-            grAction.TabStop = false;
-            grAction.Text = "Action";
-            // 
-            // btnAddBook
-            // 
-            btnAddBook.Dock = DockStyle.Bottom;
-            btnAddBook.Location = new Point(3, 27);
-            btnAddBook.Margin = new Padding(3, 2, 3, 2);
-            btnAddBook.Name = "btnAddBook";
-            btnAddBook.Size = new Size(173, 47);
-            btnAddBook.TabIndex = 20;
-            btnAddBook.Text = "Add";
-            btnAddBook.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdateBook
-            // 
-            btnUpdateBook.Dock = DockStyle.Bottom;
-            btnUpdateBook.Location = new Point(3, 74);
-            btnUpdateBook.Margin = new Padding(3, 2, 3, 2);
-            btnUpdateBook.Name = "btnUpdateBook";
-            btnUpdateBook.Size = new Size(173, 47);
-            btnUpdateBook.TabIndex = 21;
-            btnUpdateBook.Text = "Update";
-            btnUpdateBook.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteBook
-            // 
-            btnDeleteBook.Dock = DockStyle.Bottom;
-            btnDeleteBook.Location = new Point(3, 121);
-            btnDeleteBook.Margin = new Padding(3, 2, 3, 2);
-            btnDeleteBook.Name = "btnDeleteBook";
-            btnDeleteBook.Size = new Size(173, 47);
-            btnDeleteBook.TabIndex = 22;
-            btnDeleteBook.Text = "Delete";
-            btnDeleteBook.UseVisualStyleBackColor = true;
-            // 
-            // btnExitBook
-            // 
-            btnExitBook.Dock = DockStyle.Bottom;
-            btnExitBook.Location = new Point(3, 168);
-            btnExitBook.Margin = new Padding(3, 2, 3, 2);
-            btnExitBook.Name = "btnExitBook";
-            btnExitBook.Size = new Size(173, 47);
-            btnExitBook.TabIndex = 23;
-            btnExitBook.Text = "Exit";
-            btnExitBook.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            label6.Anchor = AnchorStyles.Top;
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 32.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(451, 9);
-            label6.Name = "label6";
-            label6.Size = new Size(409, 59);
-            label6.TabIndex = 24;
-            label6.Text = "Book Management";
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Controls.Add(grSearch);
-            flowLayoutPanel1.Controls.Add(grAction);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(182, 410);
-            flowLayoutPanel1.TabIndex = 26;
+            txtCategories.Location = new Point(67, 47);
+            txtCategories.Name = "txtCategories";
+            txtCategories.Size = new Size(364, 23);
+            txtCategories.TabIndex = 10;
             // 
             // frmBookManagement
             // 
@@ -367,6 +360,10 @@
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            grSearch.ResumeLayout(false);
+            grSearch.PerformLayout();
+            grAction.ResumeLayout(false);
             splitContainer2.Panel1.ResumeLayout(false);
             splitContainer2.Panel1.PerformLayout();
             splitContainer2.Panel2.ResumeLayout(false);
@@ -374,10 +371,6 @@
             splitContainer2.ResumeLayout(false);
             BookInformation.ResumeLayout(false);
             BookInformation.PerformLayout();
-            grSearch.ResumeLayout(false);
-            grSearch.PerformLayout();
-            grAction.ResumeLayout(false);
-            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -391,7 +384,6 @@
         private Label label7;
         private TextBox txtBookID;
         private TextBox txtTitle;
-        private TextBox txtDescription;
         private TextBox txtStatus;
         private ComboBox cboCategory;
         private DataGridView dgvBookList;
@@ -401,12 +393,11 @@
         private SplitContainer splitContainer1;
         private SplitContainer splitContainer2;
         private GroupBox BookInformation;
-        private RichTextBox richTextBox1;
-        private TextBox textBox1;
+        private RichTextBox rtbDescription;
+        private TextBox txtCategories;
         private GroupBox grSearch;
         private GroupBox grAction;
         private Button btnAddBook;
-        private Button btnUpdateBook;
         private Button btnDeleteBook;
         private Button btnExitBook;
         private FlowLayoutPanel flowLayoutPanel1;
