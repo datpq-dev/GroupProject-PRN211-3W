@@ -44,19 +44,19 @@ namespace BookLibrary
             // Kiểm tra theo RoleId sử dụng switch case
             switch (member.RoleId)
             {
-                case 1: // Admin
+                case 2: // Admin
                     frmAccountManagement frmAccountManagement = new();
                     this.Hide();
                     frmAccountManagement.Show();
                     // Thực hiện các hành động cho Admin
                     break;
-                case 2: // Librarian
+                case 0: // Librarian
                     frmBookManagement frmBookManagement = new();
                     this.Hide();
                     frmBookManagement.Show();
                     // Thực hiện các hành động cho Librarian
                     break;
-                case 3: // Member
+                case 1: // Member
                     frmCategory frmCategory = new();
                     this.Hide();
                     frmCategory.Show();

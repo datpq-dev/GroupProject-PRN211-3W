@@ -40,12 +40,12 @@
             btnExit = new Button();
             label5 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txtAPassword = new TextBox();
+            txtAPhone = new TextBox();
+            txtAUsername = new TextBox();
             label6 = new Label();
-            txtLastName = new TextBox();
-            txtFirstName = new TextBox();
+            txtALastName = new TextBox();
+            txtAFirstName = new TextBox();
             label4 = new Label();
             cboGender = new ComboBox();
             label7 = new Label();
@@ -162,26 +162,26 @@
             dateTimePicker1.Size = new Size(241, 27);
             dateTimePicker1.TabIndex = 20;
             // 
-            // textBox1
+            // txtAPassword
             // 
-            textBox1.Location = new Point(154, 97);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(161, 27);
-            textBox1.TabIndex = 23;
+            txtAPassword.Location = new Point(154, 97);
+            txtAPassword.Name = "txtAPassword";
+            txtAPassword.Size = new Size(161, 27);
+            txtAPassword.TabIndex = 23;
             // 
-            // textBox2
+            // txtAPhone
             // 
-            textBox2.Location = new Point(154, 164);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(161, 27);
-            textBox2.TabIndex = 22;
+            txtAPhone.Location = new Point(154, 164);
+            txtAPhone.Name = "txtAPhone";
+            txtAPhone.Size = new Size(161, 27);
+            txtAPhone.TabIndex = 22;
             // 
-            // textBox3
+            // txtAUsername
             // 
-            textBox3.Location = new Point(154, 19);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(161, 27);
-            textBox3.TabIndex = 21;
+            txtAUsername.Location = new Point(154, 19);
+            txtAUsername.Name = "txtAUsername";
+            txtAUsername.Size = new Size(161, 27);
+            txtAUsername.TabIndex = 21;
             // 
             // label6
             // 
@@ -192,19 +192,19 @@
             label6.TabIndex = 46;
             label6.Text = "Last name";
             // 
-            // txtLastName
+            // txtALastName
             // 
-            txtLastName.Location = new Point(463, 89);
-            txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(179, 27);
-            txtLastName.TabIndex = 45;
+            txtALastName.Location = new Point(463, 89);
+            txtALastName.Name = "txtALastName";
+            txtALastName.Size = new Size(179, 27);
+            txtALastName.TabIndex = 45;
             // 
-            // txtFirstName
+            // txtAFirstName
             // 
-            txtFirstName.Location = new Point(463, 19);
-            txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(179, 27);
-            txtFirstName.TabIndex = 44;
+            txtAFirstName.Location = new Point(463, 19);
+            txtAFirstName.Name = "txtAFirstName";
+            txtAFirstName.Size = new Size(179, 27);
+            txtAFirstName.TabIndex = 44;
             // 
             // label4
             // 
@@ -240,12 +240,12 @@
             Controls.Add(label7);
             Controls.Add(cboGender);
             Controls.Add(label6);
-            Controls.Add(txtLastName);
-            Controls.Add(txtFirstName);
+            Controls.Add(txtALastName);
+            Controls.Add(txtAFirstName);
             Controls.Add(label4);
-            Controls.Add(textBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox3);
+            Controls.Add(txtAPassword);
+            Controls.Add(txtAPhone);
+            Controls.Add(txtAUsername);
             Controls.Add(dateTimePicker1);
             Controls.Add(label5);
             Controls.Add(btnExit);
@@ -289,5 +289,10 @@
         private Label label4;
         private ComboBox cboGender;
         private Label label7;
+        private TextBox txtAPassword;
+        private TextBox txtAPhone;
+        private TextBox txtAUsername;
+        private TextBox txtALastName;
+        private TextBox txtAFirstName;
     }
 }

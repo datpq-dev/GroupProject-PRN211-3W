@@ -11,5 +11,11 @@ namespace BookLibrary_Repository.Repository
     {
         IEnumerable<TblUser> GetUsers();
         TblUser GetUser(string username);
+
+        void CreateUser(TblUser user);
+        void UpdateUser(TblUser user);
+        void DeleteUser(string username);
+
+
     }
-}
+    }
